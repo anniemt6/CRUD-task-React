@@ -1,0 +1,5 @@
+export const enum UsersActionType {
+    SET_USERS_DATA = 'SET_USERS_DATA',
+    SET_USERS_LOADING = 'SET_USERS_LOADING',
+    SET_USERS_ERROR = 'SET_USERS_ERROR'
+}
