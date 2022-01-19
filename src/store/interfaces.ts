@@ -18,3 +18,8 @@ export interface IAxiosResponse {
         statusText: string;
     }
 }
+
+export interface IResponseResult {
+    success: boolean;
+    error: string;
+}
