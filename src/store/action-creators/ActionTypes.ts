@@ -3,3 +3,8 @@ export const enum UsersActionType {
     SET_USERS_LOADING = 'SET_USERS_LOADING',
     SET_USERS_ERROR = 'SET_USERS_ERROR'
 }
+
+export const enum ResponseActionType {
+    SET_RESPONSE_RESULT = 'SET_RESPONSE_RESULT',
+    SET_RESPONSE_ERROR = 'SET_RESPONSE_ERROR'
+}
