@@ -9,8 +9,7 @@ export const getAllUsers = () => (dispatch: Dispatch<UsersAction>): void => {
     dispatch(setUsersLoading(true));
     axios.get<never, IAxiosResponse>(API_LINK)
         .then(response => {
-            const { data: { data }} = response;
-            dispatch(setUsersData(data));
+            dispatch(setUsersData(response.data.data));
         })
         .catch(e => {
             dispatch(setUsersError(e.message));
